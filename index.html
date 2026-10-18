@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Madera&Estilo: fabricación de muebles a medida, carpintería y restauración de madera.">
+    <title>Madera&Estilo | Mueblería y Carpintería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="#inicio">Madera<span>&Estilo</span></a>
+
+        <nav aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#muebles">Nuestros muebles</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#cotizacion">Cotizaciones</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <p class="etiqueta">DISEÑO · CALIDAD · DURABILIDAD</p>
+                <h1>Muebles a medida <span>para tu hogar</span></h1>
+                <p>
+                    Creamos muebles únicos y funcionales, con acabados
+                    de calidad y diseños adaptados a tu estilo.
+                </p>
+                <a class="boton" href="#muebles">Ver nuestros muebles</a>
+            </div>
+        </section>
+
+        <section class="ventajas" aria-label="Nuestras ventajas">
+            <article>
+                <h2>Calidad</h2>
+                <p>Materiales seleccionados y buenos acabados.</p>
+            </article>
+            <article>
+                <h2>Diseño personalizado</h2>
+                <p>Muebles adaptados a tus necesidades y espacio.</p>
+            </article>
+            <article>
+                <h2>Durabilidad</h2>
+                <p>Trabajos elaborados con atención al detalle.</p>
+            </article>
+            <article>
+                <h2>Compromiso</h2>
+                <p>Atención responsable en cada proyecto.</p>
+            </article>
+        </section>
+
+        <section id="muebles" class="seccion">
+            <p class="etiqueta">NUESTROS PRODUCTOS</p>
+            <h2>Muebles para cada espacio</h2>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+                        alt="Sofá moderno en una sala de estar">
+                    <h3>Salas y sofás</h3>
+                    <p>Comodidad y estilo para tu hogar.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"
+                        alt="Dormitorio con cama y muebles de madera">
+                    <h3>Dormitorios</h3>
+                    <p>Diseños cómodos y elegantes.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80"
+                        alt="Mesa de comedor con sillas">
+                    <h3>Comedores</h3>
+                    <p>Espacios para compartir en familia.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                        alt="Interior moderno con muebles y acabados de calidad">
+                    <h3>Cocinas y closets</h3>
+                    <p>Organización y aprovechamiento del espacio.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="servicios" class="seccion servicios">
+            <p class="etiqueta">LO QUE HACEMOS</p>
+            <h2>Nuestros servicios</h2>
+
+            <div class="tarjetas">
+                <article class="servicio">
+                    <h3>Fabricación de muebles</h3>
+                    <p>Elaboramos muebles según tus ideas y necesidades.</p>
+                </article>
+
+                <article class="servicio">
+                    <h3>Carpintería general</h3>
+                    <p>Realizamos trabajos en madera para diferentes espacios.</p>
+                </article>
+
+                <article class="servicio">
+                    <h3>Reparación de muebles</h3>
+                    <p>Ayudamos a recuperar la utilidad de tus muebles.</p>
+                </article>
+
+                <article class="servicio">
+                    <h3>Restauración</h3>
+                    <p>Renovamos muebles mediante trabajos de restauración.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cotizacion" class="seccion">
+            <p class="etiqueta">CONTACTO</p>
+            <h2>Solicita tu cotización</h2>
+            <p>Cuéntanos qué mueble o trabajo necesitas.</p>
+
+            <form id="formulario"
+                action="https://formsubmit.co/chatopatricio206@gmail.com"
+                method="POST">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre"
+                    autocomplete="name" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo"
+                    autocomplete="email" required>
+
+                <label for="tipo">¿Qué necesitas?</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="Mueble personalizado">Mueble personalizado</option>
+                    <option value="Carpintería">Trabajo de carpintería</option>
+                    <option value="Reparación">Reparación de muebles</option>
+                    <option value="Restauración">Restauración</option>
+                </select>
+
+                <label for="mensaje">Describe tu proyecto</label>
+                <textarea id="mensaje" name="mensaje" rows="4"
+                    placeholder="Ej.: necesito un armario para mi dormitorio."
+                    required></textarea>
+
+                <button class="boton" type="submit">Solicitar cotización</button>
+                <p id="respuesta" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        
+<footer>
+    <a class="logo" href="#inicio">Madera<span>&Estilo</span></a>
+
+    <p>Mueblería y carpintería · Diseño que transforma espacios.</p>
+
+    <div class="datos-contacto">
+        <p>
+            <strong>Correo electrónico:</strong>
+            <a href="mailto:contacto@maderayestilo.com">
+                contacto@maderayestilo.com
+            </a>
+        </p>
+        <p>
+            <strong>Teléfono:</strong>
+            <a href="tel:+5930979315600">
+                +593 0979315600
+            </a>
+        </p>
+        <p>
+            <strong>Ubicación:</strong>
+            <a href="https://www.google.com/maps/search/?api=1&query=Paute%2C+Azuay%2C+Ecuador"
+               target="_blank" rel="noopener noreferrer">
+                Machachi, aloasi, Ecuador, Av El Calvario.
+            </a>
+        </p>
+    </div>
+
+    <p>&copy; 2026 Madera&Estilo.</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
